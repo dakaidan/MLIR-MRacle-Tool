@@ -1,0 +1,33 @@
+# Rust/Cargo
+/target/
+
+# Local build and experiment artifacts
+/build/
+/findings/
+/replay-*/
+/smoke*/
+/findings-*/
+
+# Native/CMake artifacts kept outside the main build cache
+/native/build/
+/native/cache/
+
+# Python tooling
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local/editor noise
+.env
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.partial

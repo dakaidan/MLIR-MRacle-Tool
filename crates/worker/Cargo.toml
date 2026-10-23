@@ -1,0 +1,26 @@
+[package]
+name = "mracle-worker"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93.1"
+license = "MIT"
+build = "build.rs"
+
+[features]
+default = ["native"]
+native = []
+
+[dependencies]
+mlir-mracle = { path = "../.." }
+serde_json = "1"
+
+[build-dependencies]
+serde_json = "1"
+
+[[bin]]
+name = "mracle-worker"
+path = "src/main.rs"
+required-features = ["native"]
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

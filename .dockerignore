@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+target
+build
+findings
+findings-*
+runs
+runs-*
+smoke
+replay-*
+*.log
+*.tmp
+__pycache__
+*.pyc
